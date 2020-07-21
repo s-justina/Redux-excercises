@@ -3,9 +3,9 @@ import {connect} from 'react-redux'
 
 const TodoList = ({todos}) => {
     return (
-        <div>
-            {JSON.stringify(todos)}
-        </div>
+        <pre>
+            {JSON.stringify(todos, null, 2)}
+        </pre>
     )
 };
 
